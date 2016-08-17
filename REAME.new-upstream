@@ -1,0 +1,6 @@
+To update:
+- download new .tar.gz
+- remove ragel subdirectory
+- extract .tar.gz
+- rename directory as ragel
+- commit changes
