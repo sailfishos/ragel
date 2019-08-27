@@ -252,7 +252,7 @@ tr50:
 #line 211 "rlscan.rl"
 	{te = p+1;{
 			escapeXML( ts, te-ts );
-			{stack[top++] = 24; goto st6;}
+			{stack[top++] = 24;goto st6;}
 		}}
 	goto st24;
 st24:
@@ -462,7 +462,7 @@ tr58:
 #line 91 "rlscan.rl"
 	{te = p+1;{
 			write( "/*" );
-			{stack[top++] = 31; goto st6;}
+			{stack[top++] = 31;goto st6;}
 		}}
 	goto st31;
 st31:

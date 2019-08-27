@@ -138,9 +138,9 @@ tr1:
 #line 42 "gotocallret.rl"
 	{
 		if ( comm >= 'a' )
-			{stack[top++] = 2; goto st5;}
+			{stack[top++] = 2;goto st5;}
 		else 
-			{stack[top++] = 2; goto st6;}
+			{stack[top++] = 2;goto st6;}
 	}
 	goto st2;
 st2:
@@ -238,18 +238,24 @@ case 10:
 	switch ( cs ) {
 	case 5: 
 #line 38 "gotocallret.rl"
-	{p--;{cs = stack[--top];goto _again;}}
+	{p--;{cs = stack[--top];	if ( p == pe )
+		goto _test_eof;
+goto _again;}}
 	break;
 	case 6: 
 #line 39 "gotocallret.rl"
-	{p--;{cs = stack[--top];goto _again;}}
+	{p--;{cs = stack[--top];	if ( p == pe )
+		goto _test_eof;
+goto _again;}}
 	break;
 	case 1: 
 	case 2: 
 #line 56 "gotocallret.rl"
-	{p--;{goto st3;}}
+	{p--;{       if ( p == pe )
+               goto _test_eof3;
+goto st3;}}
 	break;
-#line 253 "gotocallret.cpp"
+#line 259 "gotocallret.cpp"
 	}
 	}
 

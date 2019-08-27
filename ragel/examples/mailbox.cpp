@@ -588,11 +588,11 @@ tr88:
 			 * the contents. */
 			cout << headName.data << ":";
 			headName.clear();
-			{stack[top++] = 34; goto st103;}
+			{stack[top++] = 34;goto st103;}
 		}
 
 		headName.clear();
-		{stack[top++] = 34; goto st102;}
+		{stack[top++] = 34;goto st102;}
 	}
 	goto st34;
 st34:
@@ -1496,10 +1496,12 @@ case 104:
 		cout << headContent.data << endl;
 		headContent.clear();
 		p--;
-		{cs = stack[--top];goto _again;}
+		{cs = stack[--top];	if ( p == pe )
+		goto _test_eof;
+goto _again;}
 	}
 	break;
-#line 1503 "mailbox.cpp"
+#line 1505 "mailbox.cpp"
 	}
 	}
 

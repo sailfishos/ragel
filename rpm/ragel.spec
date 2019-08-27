@@ -1,11 +1,11 @@
 Name:       ragel
 Summary:    Finite state machine compiler
-Version:    6.9
+Version:    6.10
 Release:    1
 Group:      Development/Tools
 License:    GPLv2
 URL:        http://www.colm.net/open-source/ragel/
-Source0:    http://www.colm.net/files/ragel/%{name}-%{version}.tar.gz
+Source0:    https://www.colm.net/files/ragel/%{name}-%{version}.tar.gz
 
 
 %description
