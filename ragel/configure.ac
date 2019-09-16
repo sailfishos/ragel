@@ -18,8 +18,8 @@ dnl   You should have received a copy of the GNU General Public License
 dnl   along with Ragel; if not, write to the Free Software
 dnl   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
   
-AC_INIT(ragel, 6.9)
-PUBDATE="Oct 2014"
+AC_INIT(ragel, 6.10)
+PUBDATE="March 2017"
 
 AM_INIT_AUTOMAKE([foreign])
 AC_SUBST(PUBDATE)
